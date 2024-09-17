@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: songs_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Yadmor91
+      POSTGRES_DB: capstone_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
