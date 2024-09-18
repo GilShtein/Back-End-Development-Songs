@@ -4,8 +4,8 @@ services:
     image: postgres:latest
     container_name: songs_postgres
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Yadmor91
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: capstone_db
     ports:
       - "5432:5432"
